@@ -1,15 +1,20 @@
 #include <iostream>
 #include <iomanip>
+#include <cstdlib> 
 using namespace std;
 #include "BST.h"
-int main(int argc, char **argv) {
-  unsigned int i; // counter to loop from 1-10
-  BST b;
-  for (i = 1; i < argc; ++i) {
-       b.insert_node (atoi(argv[i]));
-  } // end for
-   b.print();//in order function
 
-  //b.searchtree(11);
- 
-} // end main
+int main(int argc, char **argv) {
+  unsigned int i; 
+  BST b;
+  
+  // Start loop at 1 to skip the program name in argv[0]
+  for (i = 1; i < argc; ++i) {
+       b.insert_node(atoi(argv[i]));
+  } 
+
+  // Option 3 prints InOrder, PreOrder, PostOrder, and the Tree
+  b.print(3); 
+  
+  return 0;
+}

@@ -1,4 +1,4 @@
-complie: main.cpp
-	g++ main.cpp -o BST
-run: BST
-	./BST
+compile: main.cpp BST.h Treenode.h
+	g++ main.cpp -o main
+run: main
+	./main
