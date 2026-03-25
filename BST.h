@@ -63,7 +63,7 @@ void BST::insert_node(int value) {
               }
           } 
       }
-      cout << value << "inserted" << endl;
+      cout << value << " inserted" << endl;
       ++size;
   }
 }
